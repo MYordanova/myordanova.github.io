@@ -2,3 +2,23 @@ body{
   background-color:#ffffff;
 
 }
+h1{
+  color:purple;
+}
+
+.content{
+display:inline-block;
+width: 100%;
+padding: : 20px;
+
+}
+.content-left{
+  float:left;
+  width: 50%;
+  padding-right: : 20px;
+}
+
+.content-right{
+  float:right;
+  padding-left: 20px;
+}
