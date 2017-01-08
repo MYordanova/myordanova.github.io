@@ -6,10 +6,33 @@ h1{
   color:purple;
 }
 
+.box{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.field{
+  font-family: Tahoma;
+  display: inline-flex;
+  width: 50%;
+}
+
+.field label{
+  font-weight: bold;
+  text-align: left;
+  width: 50%;
+
+}
+
+ .field .value{
+  text-align: right;
+  width: 50%;
+}
+
 .content{
-display:inline-block;
-width: 100%;
-padding: : 20px;
+  display: inline-block;
+  width: 100%;
+  padding: : 20px;
 
 }
 .content-left{
