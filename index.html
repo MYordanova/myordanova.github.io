@@ -2,9 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Lebenslauf</title>
+  <title>Mariya.Yordanova</title>
   <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto|Montserrat|Lato" rel="stylesheet">
+
+  <!-- Owl Carousel Assets -->
+  <link rel="stylesheet" href="libraries/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="libraries/owlcarousel/assets/owl.theme.default.min.css">
+
+  <script src="libraries/jquery.min.js"></script>
+  <script src="libraries/owlcarousel/owl.carousel.js"></script>
+  <!-- Owl Carousel Assets end -->
+
 </head>
 
 <body>
@@ -24,13 +33,26 @@
             <li><a href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
+
+        <div class="owl-carousel owl-theme">
+        </div>
     </div>
 
     <div class="content">
 
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="onarow" src="images/1.jpg"/>
+        </div>
+        <div class="item">
+          <img class="onarow" src="images/2.jpg"/>
+        </div>
+        <div class="item">
+          <img class="onarow" src="images/3.jpg"/>
+        </div>
+      </div>
     </div>
   </div>
-
   <!-- <img src="images/user.png"/>
 
   <ul>
@@ -53,5 +75,21 @@
     <div class="footer"></div>
   </footer>
 
+
+  <script>
+     $(document).ready(function() {
+       var owl = $('.owl-carousel');
+       owl.owlCarousel({
+         margin: 10,
+         loop: true,
+         autoplay: true,
+         responsive: {
+           0: {
+             items: 1
+           }
+         }
+       })
+     })
+  </script>
 </body>
 </html>
