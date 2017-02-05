@@ -1,5 +1,5 @@
-body{
-  background-color:#eeedee;
+body {
+  background-color: #eeedee;
   height: auto;
 }
 
@@ -11,50 +11,53 @@ body{
   height:50px;
   background:gray;
 }*/
-.top{
-  position: fixed;
-  margin-top: 0;
-  margin-right:0;
-  margin-left:0;
-  width: 1024px;
-  height:50px;
-  color:gray;
-}
-nav{
+
+nav {
   width: 50%;
-  float:right;
-  padding-top:40px;
+  float: right;
+  padding-top: 40px;
 }
 
-nav ul li:hover a{
-    color:#000000;
+nav ul li:hover a {
+    color: #000000;
 }
 
 li.selected a {
-  color:#000000;
+  color: #000000;
 }
 
-.logo{
+.logo {
   display: flex;
   float: left;
   width: 50%;
   height: 100px;
 }
 
-.menuwrapper{
-  width: 100%;
+.menuwrapper {
+  width: 1024px;
   height: 100px;
   clear: both;
   align-items: center;
-  background-color:#eeedee;
+  position: fixed;
+  background-color: #eeedee;
 }
 
-li{
+#container {
+  position: relative;
+  width: 1024px;
+  height: 100px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  z-index: 9000;
+}
+
+li {
   display: inline;
   width: 65px;
 }
 
-a{
+a {
   text-decoration: none;
   font-family: 'Raleway';
   font-size: 13px;
@@ -63,24 +66,24 @@ a{
   font-weight: 800;
 }
 
-ul{
+ul {
   display: flex;
   justify-content: space-between;
 }
 
-.projects{
+.projects {
   width: 100%;
   height: auto;
 }
 
-.column{
+.column {
   max-width: 25%;
   display: inline-block;
   height: auto;
   float: left;
 }
 
-.onarow{
+.onarow {
   display: inline-block;
   float: left;
   position: relative;
@@ -94,25 +97,26 @@ ul{
     overflow: hidden;
 }
 
-.field{
+.field {
   font-family: 'Raleway';
   font-size: 13px;
   color: #696969;
 }
 
-.title{
+.title {
   font-family: 'Raleway';
   font-size: 13px;
-  color: #696969;
+  color: #000000;
   font-weight: bold;
   padding: 20px 0px 20px 0px;
   width: 50%;
 }
 
-.value{
+.value {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
 /*
 .info{
   width: 100%;
@@ -121,7 +125,7 @@ ul{
   display: flex;
 }*/
 
-footer{
+footer {
   display: block;
   background-color: black;
   position: relative;
@@ -136,82 +140,140 @@ footer{
 
 .box {
   width: 1024px;
-  min-height:100%;
+  height: 1436px;
   margin: 0 auto;
 }
 
-.field{
+.profil .box {
+  min-height: 1300px;
+}
+
+.field {
   display: inline-flex;
   width: 100%;
 }
 
-.field label{
-  font-family: "Roboto";
+ label {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-size: 11px;
-  color: #5b5058;
-  font-weight: bold;
+  color: #000000;
+  font-weight: 900;
   text-align: left;
+  display: block;
   width: 50%;
 }
 
- .field .value{
-  font-family: 'Railway',sans-serif;
+ .value {
+  font-family: 'Raleway', sans-serif;
   font-size: 11px;
   font-style: normal;
-  color: #5b5058;
-  text-align: left;
+  color: #696969;
+  text-align: right;
+  width: 50%;
+}
+
+.content {
   width: 100%;
 }
 
-
-.content{
-  display: flex;
-}
-
-.content_right {
-  display: block;
+.content_left {
+  background-color: #E0E0E0;
+  display: inline-block;
+  clear: both;
   float: left;
+  width: 600px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.content_right {
+  background-color: #E0E0E0;
+  display: inline-block;
+  float: right;
+  width: 600px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.activity_line {
+  width: 1024px;
+  height: auto;
+}
+
+.user {
+ width: 100%;
+ height: 300px;
+ overflow: hidden;
+ display: inline-block;
+ text-align: center;
+ float: left;
+ z-index: -9000;
+}
+
+.column1 {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  height: 900px;
+  border-right: 1px solid #9A9A9A;
+}
+
+.column2 {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  height: 900px;
+  border-left: 1px solid #9A9A9A;
+}
+
+.timeline_item {
+  border-top: 2px solid #F1F2F2;
+  position: relative;
+  padding-top: 15px;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+  background-color: #E9C11E;
+	position: absolute;
+  top: -6px;
+  right: -6px;
+}
+
+.column2 .circle {
+  left: -6px;
+}
+
+.date {
+  position: absolute;
+  top: -7px;
+  background-color: #eeedee;
+  padding-right: 6px;
+  
+}
+
+.column2 .date {
+  right: 0;
+  float: right;
+  padding-left: 6px;
+  padding-right: 0;
+}
+
+.column2 .timeline_item h3, .column2 .timeline_item p, .column2 .timeline_item div {
+  float: right;
+}
+.column2 .timeline_item p {
+  width: 100%;
+  text-align: right;
 }
 
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+.left-1 { height: 90px; }
+.left-2 { height: 90px; }
+.left-3 { height: 90px; }
+
+.right-1 { height: 340px; }
