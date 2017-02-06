@@ -140,12 +140,12 @@ footer {
 
 .box {
   width: 1024px;
-  height: 1436px;
+  height: 100%;
   margin: 0 auto;
 }
 
 .profil .box {
-  min-height: 1300px;
+  height: 1436px;
 }
 
 .field {
@@ -253,7 +253,7 @@ footer {
   top: -7px;
   background-color: #eeedee;
   padding-right: 6px;
-  
+
 }
 
 .column2 .date {
